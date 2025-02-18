@@ -1,0 +1,51 @@
+.surgicalClinic {
+  position: relative;
+  height: 100%;
+}
+
+.surgicalClinic h2 {
+  font-size: 40px;
+  position: absolute;
+  top: 4%;
+}
+
+.surgicalClinic p {
+  position: absolute;
+  top: calc(6% + 60px);
+  width: 525px;
+}
+
+.surgicalClinic__ul {
+  position: absolute;
+  top: calc(6% + 110px);
+  list-style-position: outside;
+  width: 505px;
+  margin-left: 20px;
+
+  li {
+    margin-bottom: 24px;
+  }
+}
+
+.surgicalClinic__button {
+  position: absolute;
+  font-family: "Aleo", serif;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  width: 345px;
+  right: 0;
+  top: calc(6% + 60px);
+}
+
+.surgicalClinic__img {
+  position: absolute;
+  bottom: calc(50% - 410px);
+  right: calc(50% - 534px);
+}

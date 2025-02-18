@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  height: 77px;
+  position: relative;
+}
+
+.pdf__button {
+  position: absolute;
+  top: 18px;
+  right: 67px;
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  gap: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s;
+  animation: buzz 0.2s ease-in-out 3;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-duration: 5.2s;
+}
+
+.pdf__button:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes buzz {
+  0%,
+  96% {
+    transform: translateX(0);
+  }
+  97% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  98% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  99% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

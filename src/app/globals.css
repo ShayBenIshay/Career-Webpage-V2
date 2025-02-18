@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Abril+Fatface&family=Aleo:ital,wght@0,100..900;1,100..900&family=Scope+One&family=Special+Elite&family=Suez+One&family=Ultra&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffcf3;
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02rem;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  font-family: "Scope One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 76px;
+  justify-self: center;
+  line-height: 97px;
+  letter-spacing: 1.2rem;
+  color: #fff;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 7px 6px 3px);
+  padding-top: 20px;
+}
+
+.hero__h2 {
+  font-family: "Abril Fatface", serif;
+  font-size: 41px;
+  line-height: 61px;
+  color: #fff;
+  width: fit-content;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 46px;
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  line-height: 45px;
+
+  margin-bottom: 42px;
+  width: fit-content;
+  text-align: center;
+  justify-self: center;
+}
+
+h3 {
+  font-family: "Aleo", serif;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02rem;
+  max-width: 525px;
+}
+
+.container {
+  justify-self: center;
+  width: 1065px;
+}

@@ -1,0 +1,52 @@
+.matrixAgent {
+  position: relative;
+  height: 100%;
+}
+
+.matrixAgent h2 {
+  font-size: 40px;
+  position: absolute;
+  top: 6%;
+  margin: 0;
+}
+
+.matrixAgent p {
+  position: absolute;
+  top: calc(8% + 75px);
+}
+
+.matrixAgent__ul {
+  position: absolute;
+  top: calc(8% + 159px);
+  list-style-position: outside;
+  width: 505px;
+  margin-left: 20px;
+
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.matrixAgent__button {
+  position: absolute;
+  top: 216.5px;
+  font-family: "Aleo", serif;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  width: 255px;
+  top: calc(8% + 159px);
+  right: calc(50% - 352px);
+}
+
+.matrixAgent__img {
+  position: absolute;
+  bottom: calc(50% - 360px);
+  right: calc(50% - 534px);
+}

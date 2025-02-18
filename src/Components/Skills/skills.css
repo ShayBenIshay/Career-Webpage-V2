@@ -1,0 +1,26 @@
+.skills-backend,
+.skills-frontend,
+.skills-tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 22px;
+}
+
+.skills-tools {
+  gap: 24px;
+  margin-bottom: 45px;
+}
+
+.skills-backend-item,
+.skills-frontend-item,
+.skills-tools-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}

@@ -1,0 +1,15 @@
+.footer {
+  margin: 0;
+  width: 100%;
+  justify-items: center;
+  align-content: center;
+  height: 60px;
+  background-image: url("../../../public/hero-image.png");
+  background-size: cover;
+  background-position: right 0 bottom 37%;
+  background-repeat: no-repeat;
+}
+.footer p {
+  text-align: center;
+  color: #fff;
+}

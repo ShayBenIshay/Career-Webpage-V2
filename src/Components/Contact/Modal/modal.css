@@ -1,0 +1,96 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  width: 705px;
+  height: 525px;
+  border-radius: 35px;
+  padding: 0 21px;
+  color: white;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.modal-content form div:first-child {
+  margin-bottom: 40px;
+}
+
+.modal-content form div:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.modal-content form div:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.modal-content h3 {
+  margin-top: 27px;
+  margin-bottom: 46px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  height: 51px;
+  padding: 18px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ececec;
+  color: black;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.02rem;
+}
+
+.form-group textarea {
+  height: 135px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content form button {
+  width: 345px;
+  height: 43px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.02rem;
+}
+
+.modal-content form button:hover {
+  opacity: 0.9;
+}

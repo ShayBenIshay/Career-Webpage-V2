@@ -1,0 +1,17 @@
+.hero__image {
+  background-image: url("../../../public/hero-image.png");
+  background-position: top 5% right 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  height: calc(100vh - 77px);
+  position: relative;
+}
+
+.hero__h2 {
+  position: absolute;
+  bottom: 15%;
+  left: calc(50% + 7.5px);
+}

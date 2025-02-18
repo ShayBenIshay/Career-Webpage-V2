@@ -1,0 +1,96 @@
+.freelance {
+  position: relative;
+}
+
+.freelance h2 {
+  margin-top: 52px;
+}
+
+.freelance__ul {
+  margin-bottom: 20px;
+  max-width: 525px;
+  list-style-position: inside;
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.freelance__button {
+  position: absolute;
+  top: 90px;
+  right: 90px;
+  font-family: "Aleo", serif;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  border: none;
+  background-color: #385b63;
+  color: #fff;
+  cursor: pointer;
+}
+
+.freelance__button:hover {
+  background-color: #4a747ef1;
+}
+
+.works-grid {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.work-card {
+  background-color: #b6bcbe;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 5px;
+  height: 341px;
+  max-width: 525px;
+  filter: drop-shadow(0px 2px 0.5px black);
+}
+
+.work-card:hover {
+  outline: 1px solid #000;
+  background-color: #c7cdcf;
+}
+
+.work-card-images {
+  display: grid;
+  height: 235px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  align-items: end;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.image-1,
+.image-3 {
+  height: 200px;
+}
+
+.image-2 {
+  height: 230px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border: 2px dashed #ddd;
+}

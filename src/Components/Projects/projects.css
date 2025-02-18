@@ -1,0 +1,93 @@
+/* Customization Fullpage Settings */
+.fp-watermark {
+  display: none;
+}
+
+.fp-overflow {
+  width: 100%;
+}
+
+.fp-nav {
+  position: fixed;
+  top: calc(50% - 50px);
+  right: 20px;
+  z-index: 8;
+  ul li a {
+    color: #fff;
+  }
+}
+
+#fp-nav.fp-right ul li a span {
+  background-color: #fff;
+}
+/* End of Customization Fullpage */
+
+.section {
+  width: 100%;
+}
+
+/* Header */
+.page1 .header,
+.page2 .header,
+.page3 .header {
+  .navbar ul li button::after {
+    background-color: #fff;
+  }
+
+  .pdf__button {
+    color: #fff;
+    border: 1px solid #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+/* Section Content */
+.section-content {
+  height: calc(100vh - 77px);
+}
+
+/* Page 1 */
+.page1 {
+  background-color: #2b2e2a;
+  color: #fff;
+
+  button:hover {
+    background-color: #9ea49d;
+  }
+}
+
+/* Page 2 */
+.page2 {
+  background-color: #385b63;
+  color: #fff;
+
+  button:hover {
+    background-color: #6e9aa3;
+  }
+}
+
+/* Page 3 */
+.page3 {
+  background-color: #9e6d40;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header .pdf__button:hover {
+    background-color: #b47e4b;
+  }
+}
+
+/* Footer */
+#section-include-footer .section-content {
+  height: calc(100vh - 129px);
+}
+
+#section-include-footer .fp-overflow .footer {
+  background-image: none;
+}

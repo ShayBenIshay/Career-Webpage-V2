@@ -1,0 +1,70 @@
+.timeline {
+  position: relative;
+  justify-self: center;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  padding-top: 20px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: -103px;
+  top: 0px;
+  bottom: 0;
+  width: 1px;
+  background-color: #000;
+}
+
+.timeline-bottom {
+  position: absolute;
+  left: -103px;
+  bottom: 0;
+  /* width: 104px; */
+  width: 1168px;
+  height: 1px;
+  background-color: #000;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.years-box {
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 172.5px);
+  border: 1px solid #000;
+  width: 345px;
+  height: 40px;
+  text-align: center;
+  padding: 3px;
+}
+
+.timeline-item-connector {
+  position: absolute;
+  left: -124.5px;
+  width: calc(50% - 48px);
+  height: 1px;
+  background-color: #000;
+}
+
+.timeline-item-connector::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #b6bcbe;
+}
+
+.timeline-item-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 100%;
+}
