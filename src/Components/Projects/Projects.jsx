@@ -15,10 +15,10 @@ const Projects = () => {
   };
 
   const anchors = ["Hero", "MatrixAgent", "SurgicalClinic", "SmartInvestor"];
-
+  const licenseKey = process.env.NEXT_PUBLIC_FULLPAGE_LICENSE_KEY;
   return (
     <ReactFullpage
-      licenseKey="3xXu3&L^u5"
+      licenseKey={licenseKey}
       scrollingSpeed={1000}
       autoScrolling={true}
       scrollHorizontally={true}
