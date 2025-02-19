@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef, useEffect } from "react";
 import "./modal.css";
 
@@ -5,12 +7,20 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState(() => {
+    if (typeof window !== "undefined") {
+      return {
+        name: localStorage.getItem("contactFormName") || "",
+        email: localStorage.getItem("contactFormEmail") || "",
+      };
+    }
+    return { name: "", email: "" };
+  });
   const messageRef = useRef(null);
 
   useEffect(() => {
     if (isOpen && messageRef.current) {
       messageRef.current.focus();
-      // Set cursor position to end of text
       messageRef.current.setSelectionRange(
         messageRef.current.value.length,
         messageRef.current.value.length
@@ -19,6 +29,17 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
   }, [isOpen]);
 
   if (!isOpen) return null;
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (typeof window !== "undefined") {
+      localStorage.setItem(
+        `contactForm${name.charAt(0).toUpperCase() + name.slice(1)}`,
+        value
+      );
+    }
+  };
 
   const validateForm = (formData) => {
     const newErrors = {};
@@ -95,6 +116,8 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
               placeholder="Name"
               required
               className={errors.name ? "input-error" : ""}
+              value={formData.name}
+              onChange={handleInputChange}
             />
             {errors.name && (
               <span className="error-message">{errors.name}</span>
@@ -107,6 +130,8 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
               placeholder="Email"
               required
               className={errors.email ? "input-error" : ""}
+              value={formData.email}
+              onChange={handleInputChange}
             />
             {errors.email && (
               <span className="error-message">{errors.email}</span>
