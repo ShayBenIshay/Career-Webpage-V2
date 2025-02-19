@@ -27,11 +27,9 @@ const MatrixAgent = () => {
       >
         Check Source Code
       </button>
-      <Image
-        className="matrixAgent__img"
-        src={matrixSchema}
-        alt="Matrix Agent Schema"
-      />
+      <div className="matrixAgent__img-container">
+        <Image src={matrixSchema} alt="Matrix Agent Schema" />
+      </div>
     </div>
   );
 };

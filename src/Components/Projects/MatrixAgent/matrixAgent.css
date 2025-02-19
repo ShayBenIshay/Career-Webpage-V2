@@ -45,8 +45,45 @@
   right: calc(50% - 352px);
 }
 
-.matrixAgent__img {
+.matrixAgent__img-container {
   position: absolute;
-  bottom: calc(50% - 360px);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: flex-end;
+
+  height: 480px;
+  /* overflow: hidden; */
+  bottom: 30px;
   right: calc(50% - 534px);
+  img {
+    height: auto;
+    /* max-height: 350px; */
+    object-fit: contain;
+  }
+}
+
+@media (max-height: 900px) {
+  .matrixAgent__img-container {
+    height: 400px;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .matrixAgent__button {
+    top: 180px;
+    right: calc(50% - 302px);
+  }
+}
+
+@media (max-height: 800px) {
+  .matrixAgent__img-container {
+    height: 350px;
+  }
+  .matrixAgent__button {
+    top: 180px;
+    right: calc(50% - 302px);
+  }
 }

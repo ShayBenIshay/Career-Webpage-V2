@@ -1,5 +1,7 @@
 import "./smartInvestor.css";
-import smartInvestorScreenshots from "../../../../public/content/smart-investor-screenshots.png";
+import smartInvestorScreenshot1 from "../../../../public/content/smartInvestorScreenshot1.png";
+import smartInvestorScreenshot2 from "../../../../public/content/smartInvestorScreenshot2.png";
+import smartInvestorScreenshot3 from "../../../../public/content/smartInvestorScreenshot3.png";
 import Image from "next/image";
 
 const SmartInvestor = () => {
@@ -35,11 +37,14 @@ const SmartInvestor = () => {
       >
         Check Source Code
       </button>
-      <Image
-        className="smartInvestor__img"
-        src={smartInvestorScreenshots}
+      <div className="smartInvestor__img-container">
+        <Image src={smartInvestorScreenshot1} alt="Smart Investor" />
+        <Image src={smartInvestorScreenshot2} alt="Smart Investor" />
+        <Image src={smartInvestorScreenshot3} alt="Smart Investor" />
+      </div>
+      {/* src={smartInvestorScreenshots}
         alt="Smart Investor"
-      />
+      /> */}
     </div>
   );
 };

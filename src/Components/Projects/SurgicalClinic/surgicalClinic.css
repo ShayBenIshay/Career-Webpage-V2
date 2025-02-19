@@ -44,8 +44,38 @@
   top: calc(6% + 60px);
 }
 
-.surgicalClinic__img {
+/* .surgicalClinic__img {
   position: absolute;
   bottom: calc(50% - 410px);
   right: calc(50% - 534px);
+} */
+
+.surgicalClinic__img-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  bottom: 10px;
+  right: calc(50% - 540px);
+  align-items: flex-end;
+  height: 350px;
+  /* overflow: hidden; */
+
+  img {
+    height: auto;
+    /* max-height: 350px; */
+    object-fit: contain;
+  }
+}
+
+@media (max-height: 900px) {
+  .surgicalClinic__img-container {
+    overflow: hidden;
+  }
+}
+
+@media (max-height: 800px) {
+  .surgicalClinic__img-container {
+    height: 290px;
+  }
 }

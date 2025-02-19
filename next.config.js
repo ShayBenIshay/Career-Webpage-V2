@@ -1,9 +1,11 @@
+const isProduction = process.env.NEXT_PUBLIC_ENV === "production";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     esmExternals: "loose",
   },
-  output: "export",
+  output: isProduction ? "export" : undefined,
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

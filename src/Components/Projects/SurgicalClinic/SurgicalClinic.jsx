@@ -1,6 +1,9 @@
 import "./surgicalClinic.css";
-import surgicalClinicDesign from "../../../../public/content/surgical-clinic-design.png";
+
 import Image from "next/image";
+import surgicalClinicScreenshot1 from "../../../../public/content/surgical-clinic-screenshot1.png";
+import surgicalClinicScreenshot2 from "../../../../public/content/surgical-clinic-screenshot2.png";
+import surgicalClinicScreenshot3 from "../../../../public/content/surgical-clinic-screenshot3.png";
 
 const SurgicalClinic = () => {
   return (
@@ -19,11 +22,11 @@ const SurgicalClinic = () => {
       >
         Visit Website
       </button>
-      <Image
-        className="surgicalClinic__img"
-        src={surgicalClinicDesign}
-        alt="Surgical Clinic Design"
-      />
+      <div className="surgicalClinic__img-container">
+        <Image src={surgicalClinicScreenshot1} alt="Surgical Clinic" />
+        <Image src={surgicalClinicScreenshot2} alt="Surgical Clinic" />
+        <Image src={surgicalClinicScreenshot3} alt="Surgical Clinic" />
+      </div>
     </div>
   );
 };
