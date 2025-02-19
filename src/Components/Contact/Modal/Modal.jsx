@@ -5,10 +5,6 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState({});
-  const [formData, setFormData] = useState(() => ({
-    name: localStorage.getItem("contactFormName") || "",
-    email: localStorage.getItem("contactFormEmail") || "",
-  }));
   const messageRef = useRef(null);
 
   useEffect(() => {
@@ -23,15 +19,6 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
   }, [isOpen]);
 
   if (!isOpen) return null;
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-    localStorage.setItem(
-      `contactForm${name.charAt(0).toUpperCase() + name.slice(1)}`,
-      value
-    );
-  };
 
   const validateForm = (formData) => {
     const newErrors = {};
@@ -108,8 +95,6 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
               placeholder="Name"
               required
               className={errors.name ? "input-error" : ""}
-              value={formData.name}
-              onChange={handleInputChange}
             />
             {errors.name && (
               <span className="error-message">{errors.name}</span>
@@ -122,8 +107,6 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
               placeholder="Email"
               required
               className={errors.email ? "input-error" : ""}
-              value={formData.email}
-              onChange={handleInputChange}
             />
             {errors.email && (
               <span className="error-message">{errors.email}</span>
