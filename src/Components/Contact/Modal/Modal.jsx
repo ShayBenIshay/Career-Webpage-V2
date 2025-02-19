@@ -69,6 +69,7 @@ const Modal = ({ isOpen, onClose, title, backgroundColor, message }) => {
     }
 
     try {
+      console.log(process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
       if (!process.env.NEXT_PUBLIC_WEB3FORMS_KEY) {
         throw new Error("Web3Forms API key is not configured");
       }
