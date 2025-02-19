@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Card = ({ title, subtitle, url, images = [] }) => {
   return (
-    <button className="work-card" onClick={() => window.open(url)}>
+    <button className="work-card" onClick={() => window.open(url, "_self")}>
       <h3 className="work-card-title">
         {title}
         <br />
