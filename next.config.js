@@ -3,6 +3,7 @@ const nextConfig = {
   experimental: {
     esmExternals: "loose",
   },
+  output: "export",
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
