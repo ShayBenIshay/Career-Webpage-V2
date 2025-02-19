@@ -27,7 +27,7 @@ const Amdocs = () => {
         During this period i gained expertise in Micro-services Architecture and
         Java Spring Framework.
       </p>
-      <Image src={amdocs1} alt="Amdocs Office" />
+      <img src={amdocs1} alt="Amdocs Office" />
     </section>
   );
 };

@@ -29,97 +29,97 @@ const Skills = () => {
       <h3>Backend knowledge</h3>
       <div className="skills-backend">
         <div className="skills-backend-item">
-          <Image src={backend1} alt="backend1" />
+          <img src={backend1} alt="backend1" />
           <p>Node.js</p>
         </div>
         <div className="skills-backend-item">
-          <Image src={backend2} alt="backend2" />
+          <img src={backend2} alt="backend2" />
           <p>Feathers</p>
         </div>
         <div className="skills-backend-item">
-          <Image src={backend3} alt="backend3" />
+          <img src={backend3} alt="backend3" />
           <p>Flask</p>
         </div>
         <div className="skills-backend-item">
-          <Image src={backend4} alt="backend4" />
+          <img src={backend4} alt="backend4" />
           <p>OpenAI</p>
         </div>
         <div className="skills-backend-item">
-          <Image src={backend5} alt="backend5" />
+          <img src={backend5} alt="backend5" />
           <p>MongoDB</p>
         </div>
         <div className="skills-backend-item">
-          <Image src={backend6} alt="backend6" />
+          <img src={backend6} alt="backend6" />
           <p>Express</p>
         </div>
         <div className="skills-backend-item">
-          <Image src={backend7} alt="backend7" />
+          <img src={backend7} alt="backend7" />
           <p>Spring</p>
         </div>
       </div>
       <h3>Frontend knowledge</h3>
       <div className="skills-frontend">
         <div className="skills-frontend-item">
-          <Image src={frontend1} alt="frontend1" />
+          <img src={frontend1} alt="frontend1" />
           <p>Next.js</p>
         </div>
         <div className="skills-frontend-item">
-          <Image src={frontend2} alt="frontend2" />
+          <img src={frontend2} alt="frontend2" />
           <p>React</p>
         </div>
         <div className="skills-frontend-item">
-          <Image src={frontend3} alt="frontend3" />
+          <img src={frontend3} alt="frontend3" />
           <p>CSS</p>
         </div>
         <div className="skills-frontend-item">
-          <Image src={frontend4} alt="frontend4" />
+          <img src={frontend4} alt="frontend4" />
           <p>HTML</p>
         </div>
         <div className="skills-frontend-item">
-          <Image src={frontend5} alt="frontend5" />
+          <img src={frontend5} alt="frontend5" />
           <p>Figma</p>
         </div>
         <div className="skills-frontend-item">
-          <Image src={frontend6} alt="frontend6" />
+          <img src={frontend6} alt="frontend6" />
           <p>WordPress</p>
         </div>
         <div className="skills-frontend-item">
-          <Image src={frontend7} alt="frontend7" />
+          <img src={frontend7} alt="frontend7" />
           <p>Elementor</p>
         </div>
       </div>
       <h3>Tools and Languages </h3>
       <div className="skills-tools">
         <div className="skills-tools-item">
-          <Image src={tools1} alt="tools1" />
+          <img src={tools1} alt="tools1" />
           <p>Python</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools2} alt="tools2" />
+          <img src={tools2} alt="tools2" />
           <p>Java</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools3} alt="tools3" />
+          <img src={tools3} alt="tools3" />
           <p>Javascript</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools4} alt="tools4" />
+          <img src={tools4} alt="tools4" />
           <p>Git</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools5} alt="tools5" />
+          <img src={tools5} alt="tools5" />
           <p>Postman</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools6} alt="tools6" />
+          <img src={tools6} alt="tools6" />
           <p>Bitbucket</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools7} alt="tools7" />
+          <img src={tools7} alt="tools7" />
           <p>Kubernetes</p>
         </div>
         <div className="skills-tools-item">
-          <Image src={tools8} alt="tools8" />
+          <img src={tools8} alt="tools8" />
           <p>Maven</p>
         </div>
       </div>

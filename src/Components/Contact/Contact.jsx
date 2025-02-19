@@ -81,21 +81,21 @@ const Contact = () => {
           }
         >
           <p>LinkedIn</p>
-          <Image src={linkedin} alt="LinkedIn" />
+          <img src={linkedin} alt="LinkedIn" />
         </button>
         <button
           className="contact-links__button"
           onClick={() => window.open("https://github.com/ShayBenIshay")}
         >
           <p>GitHub</p>
-          <Image src={github} alt="GitHub" />
+          <img src={github} alt="GitHub" />
         </button>
         <button
           className="contact-links__button"
           onClick={() => window.open("https://wa.me/972547573914")}
         >
           <p>WhatsApp</p>
-          <Image src={whatsapp} alt="WhatsApp" />
+          <img src={whatsapp} alt="WhatsApp" />
         </button>
       </div>
       <div className="contact-email">

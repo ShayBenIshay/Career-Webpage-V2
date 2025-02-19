@@ -12,7 +12,7 @@ const Card = ({ title, subtitle, url, images = [] }) => {
         {[0, 1, 2].map((index) => (
           <div key={index} className={`image-container image-${index + 1}`}>
             {images[index] ? (
-              <Image src={images[index]} alt={`Project view ${index + 1}`} />
+              <img src={images[index]} alt={`Project view ${index + 1}`} />
             ) : (
               <div className="image-placeholder">Image {index + 1}</div>
             )}
