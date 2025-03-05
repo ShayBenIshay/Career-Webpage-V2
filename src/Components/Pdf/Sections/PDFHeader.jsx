@@ -27,7 +27,9 @@ const styles = StyleSheet.create({
   },
   contact: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    gap: 48,
+    justifyContent: "center",
+    // justifyContent: "space-around",
     marginTop: 2,
     width: "100%",
   },
@@ -36,25 +38,39 @@ const styles = StyleSheet.create({
   },
 });
 
-const PDFHeader = () => {
+const PDFHeader = ({ applyingFor }) => {
   return (
     <View style={styles.header}>
       <View style={styles.titleContainer}>
         <Text style={styles.name}>{headerData.name}</Text>
-        <Text style={styles.jobTitle}>{headerData.title}</Text>
+        {applyingFor === "Software Developer" && (
+          <Text style={styles.jobTitle}>{headerData.titleGeneric}</Text>
+        )}
+        {applyingFor === "AI & LLM Developer" && (
+          <Text style={styles.jobTitle}>{headerData.titleAI}</Text>
+        )}
+        {applyingFor === "Full Stack Developer" && (
+          <Text style={styles.jobTitle}>{headerData.titleFullStack}</Text>
+        )}
+        {applyingFor === "Backend Developer" && (
+          <Text style={styles.jobTitle}>{headerData.titleBackend}</Text>
+        )}
+        {applyingFor === "Frontend Developer" && (
+          <Text style={styles.jobTitle}>{headerData.titleFrontend}</Text>
+        )}
       </View>
-      <PDFProfile />
+      <PDFProfile applyingFor={applyingFor} />
       <View style={styles.contact}>
-        <Text style={styles.link}>Haifa, Israel.</Text>
+        <Link style={styles.link} src={headerData.phone.href}>
+          {headerData.phone.phoneNumber}
+        </Link>
         <Link
           style={styles.link}
           src={`mailto:${headerData.email.emailAddress}`}
         >
           {headerData.email.emailAddress}
         </Link>
-        <Link style={styles.link} src={headerData.phone.href}>
-          {headerData.phone.phoneNumber}
-        </Link>
+        <Text style={styles.link}>Haifa, Israel.</Text>
       </View>
     </View>
   );

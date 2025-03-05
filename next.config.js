@@ -5,7 +5,12 @@ const nextConfig = {
   experimental: {
     esmExternals: "loose",
   },
-  output: isProduction ? "export" : undefined,
+  images: {
+    loader: "custom",
+    loaderFile: "./loader.js",
+  },
+  output: "export",
+  // output: isProduction ? "export" : undefined,
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

@@ -9,26 +9,25 @@ export const experienceData = {
       Design and development of a full customable responsive website suitable for their needs.
       And to improve and automate their business processes with Custom web services and AI solutions.`,
       descriptionTwo: `Currently i am working on two projects:
-      an e-commerce website for a jewelry business. 
-      a business webpage for a surgical clinic.
-      I am designing the wireframes, creating the moodboard, choosing the colors palette and typography and developing the website. My tools are React, Nextjs, Nodejs, Wordpress, Woocommerce, CSS, Javascript, and more.`,
+      an e-commerce website for a jewelry business and a business webpage for a surgical clinic.
+      Using Figma i am designing the wireframes, creating the moodboard, choosing the colors palette and typography and developing the website. My tools are React, Nextjs, Nodejs, Wordpress, Woocommerce, CSS, Javascript, and more.`,
       additionalData: "https://shaytechsolutions.com",
-      websites: [
-        {
-          url: "https://offirsurg.shaytechsolutions.com",
-          title: "Surgical Clinic",
-          description:
-            "In development: A modern website for a surgical Oncology surgery.",
-          tech: "WordPress, Elementor, Custom HTML / CSS / JS",
-        },
-        {
-          url: "https://jewelry.example.com",
-          title: "Jewelry E-commerce - In Progress",
-          description:
-            "In development: Full-featured online store with product catalog and secure checkout.",
-          tech: "WooCommerce, Elementor, Custom HTML / CSS / JS",
-        },
-      ],
+      // websites: [
+      //   {
+      //     url: "https://offirsurg.shaytechsolutions.com",
+      //     title: "Surgical Clinic",
+      //     description:
+      //       "In development: A modern website for a surgical Oncology surgery.",
+      //     tech: "WordPress, Elementor, Custom HTML / CSS / JS",
+      //   },
+      //   {
+      //     url: "https://jewelry.example.com",
+      //     title: "Jewelry E-commerce - In Progress",
+      //     description:
+      //       "In development: Full-featured online store with product catalog and secure checkout.",
+      //     tech: "WooCommerce, Astra Theme, Elementor, Custom HTML / CSS / JS",
+      //   },
+      // ],
     },
     {
       title: "Backend Software Developer",

@@ -11,6 +11,12 @@ import PDFProjects from "../../Components/Pdf/Sections/PDFProjects";
 import PDFSkills from "../../Components/Pdf/Sections/PDFSkills";
 import PDFFooter from "../../Components/Pdf/Sections/PDFFooter";
 
+const applyingFor = "Software Developer";
+// const applyingFor = "AI & LLM Developer";
+// const applyingFor = "Full Stack Developer";
+// const applyingFor = "Backend Developer";
+// const applyingFor = "Frontend Developer";
+
 // Dynamically import PDFViewer with ssr disabled
 const PDFViewer = dynamic(
   async () => {
@@ -35,14 +41,20 @@ const CvPage = () => {
           language="en"
         >
           <Page size="A4" style={styles.page}>
-            <View>
-              <PDFHeader />
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 12,
+              }}
+            >
+              <PDFHeader applyingFor={applyingFor} />
               <PDFEducation />
               <PDFExperience />
               <PDFProjects />
               <PDFSkills />
+              <PDFFooter />
             </View>
-            <PDFFooter />
           </Page>
         </Document>
       </PDFViewer>

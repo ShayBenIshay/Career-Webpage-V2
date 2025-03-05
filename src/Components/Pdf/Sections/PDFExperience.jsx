@@ -59,7 +59,7 @@ const PDFExperience = () => {
       <Text style={styles.heading}>EXPERIENCE</Text>
       {experienceData.jobs.map((job, index) => (
         <View key={index}>
-          <Text style={styles.title}>
+          <Text style={styles.jobTitle}>
             {job.company} - {job.title}. {job.type ? job.type : ""}: {job.date}
           </Text>
           <Text style={styles.description}>{job.descriptionOne}</Text>

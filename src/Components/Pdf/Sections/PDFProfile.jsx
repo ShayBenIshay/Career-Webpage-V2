@@ -11,10 +11,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const PDFProfile = () => {
+const PDFProfile = ({ applyingFor }) => {
   return (
     <View>
-      <Text style={styles.description}>{aboutmeData.description}</Text>
+      <Text style={styles.description}>
+        {applyingFor === "Software Developer" && aboutmeData.generic}
+        {applyingFor === "AI & LLM Developer" && aboutmeData.ai}
+        {applyingFor === "Full Stack Developer" && aboutmeData.fullStack}
+        {applyingFor === "Backend Developer" && aboutmeData.backend}
+        {applyingFor === "Frontend Developer" && aboutmeData.frontend}
+      </Text>
     </View>
   );
 };

@@ -1,11 +1,11 @@
 "use client";
 import "./contact.css";
+import Image from "next/image";
 import linkedin from "../../../public/contact-icons/linkedin-icon.png";
 import github from "../../../public/contact-icons/github-icon.png";
 import whatsapp from "../../../public/contact-icons/whatsapp-icon.png";
 import Modal from "./Modal/Modal";
 import { useState } from "react";
-import Image from "next/image";
 
 const Contact = () => {
   const [modalState, setModalState] = useState({
@@ -31,7 +31,9 @@ const Contact = () => {
       message: "",
     });
   };
-
+  const loaderProp = ({ src }) => {
+    return src;
+  };
   return (
     <div className="container contact">
       <h2>Get in Touch</h2>
@@ -42,7 +44,7 @@ const Contact = () => {
             openModal(
               "Freelance Work",
               "#9e6d40",
-              "I’d like to hire you for a freelance job! here are the details: "
+              "I'd like to hire you for a freelance job! here are the details: "
             )
           }
         >
@@ -66,7 +68,7 @@ const Contact = () => {
             openModal(
               "Collaboration",
               "#385b63",
-              "Lets collaborate and work together! I’m a ..."
+              "Lets collaborate and work together! I'm a ..."
             )
           }
         >
@@ -81,21 +83,41 @@ const Contact = () => {
           }
         >
           <p>LinkedIn</p>
-          <Image src={linkedin} alt="LinkedIn" />
+          <Image
+            src={linkedin}
+            height={37}
+            width={37}
+            alt="LinkedIn"
+            overrideSrc="/override.jpg"
+          />
         </button>
         <button
           className="contact-links__button"
           onClick={() => window.open("https://github.com/ShayBenIshay")}
         >
           <p>GitHub</p>
-          <Image src={github} alt="GitHub" />
+          <Image
+            src={github}
+            width={37}
+            height={37}
+            alt="GitHub"
+            loader={({ src }) => src}
+            unoptimized
+          />
         </button>
         <button
           className="contact-links__button"
           onClick={() => window.open("https://wa.me/972547573914")}
         >
           <p>WhatsApp</p>
-          <Image src={whatsapp} alt="WhatsApp" />
+          <Image
+            src={whatsapp}
+            width={37}
+            height={37}
+            alt="WhatsApp"
+            loader={({ src }) => src}
+            unoptimized
+          />
         </button>
       </div>
       <div className="contact-email">

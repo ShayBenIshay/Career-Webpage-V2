@@ -10,7 +10,7 @@ export const projectsData = [
 
     frontend: `Frontend: Next.js, CSS / SCSS.`,
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
-    webpageUrl: "https://smart-investor.onrender.com",
+    webpageUrl: "smart-investor.onrender.com",
     webpageTitle: "Smart Investor Platform",
   },
   {
@@ -23,20 +23,20 @@ export const projectsData = [
 
     backend: `Backend: Flask Framework, Numpy, OpenAI.`,
     technologies: `Technologies: Python, LLM / OpenAI API, RESTful architecture.`,
-    githubUrl: "https://github.com/ShayBenIshay/Matrix-Agent",
+    githubUrl: "github.com/ShayBenIshay/Matrix-Agent",
     webpageTitle: "Matrix Agent Web Service",
   },
   {
     title: "Personal Webpage",
     subtitle: "My online CV",
     description:
-      "A responsive webpage that holds all the information regarding my career. links, portfolio, experience, and more.",
+      "A responsive Nextjs application that holds all the information regarding my career. links, portfolio, experience, and more.",
     features:
-      "Features: Download cv, navigate through sections, check social links, check other works or applications.",
-    frontend: `Frontend: React`,
+      "Features: View or download pdf, navigate through sections and pages, links to social media and other works.",
+    frontend: `Frontend: Nextjs`,
 
-    githubUrl: "https://github.com/Sh ayBenIshay/CV-Webpage",
-    webpageUrl: "https://cv.shaytechsolutions.com",
+    githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
+    webpageUrl: "cv.shaytechsolutions.com",
     webpageTitle: "My CV Webpage",
   },
 ];

@@ -10,5 +10,15 @@ export const skillsData = {
   ],
   Frontend: ["Next.js", "React", "Responsive Web Design", "CSS + SCSS", "HTML"],
   Languages: ["Python", "Java", "JavaScript", "TypeScript"],
-  Tools: ["Git CLI", "Figma", "Wordpress", "Maven", "Bitbucket", "Postman"],
+  Tools: [
+    "Git CLI",
+    "Figma",
+    "WordPress",
+    "Astra",
+    "Elementor",
+    "Maven",
+    "Bitbucket",
+    "Kubernetes",
+    "Postman",
+  ],
 };

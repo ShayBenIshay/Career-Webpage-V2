@@ -44,12 +44,6 @@
   top: calc(6% + 60px);
 }
 
-/* .surgicalClinic__img {
-  position: absolute;
-  bottom: calc(50% - 410px);
-  right: calc(50% - 534px);
-} */
-
 .surgicalClinic__img-container {
   position: absolute;
   display: flex;

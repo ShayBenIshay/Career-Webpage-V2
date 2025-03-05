@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "next lint"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.48",
     "@react-pdf/renderer": "^4.2.1",
     "next": "15.1.7",
+    "next-cloudinary": "^6.16.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

@@ -31,6 +31,7 @@ export const commonStyles = StyleSheet.create({
     fontSize: 12,
     marginBottom: 2,
     marginLeft: 8,
+    marginTop: 4,
     textDecoration: "underline",
   },
   subtitle: {
@@ -54,7 +55,7 @@ export const commonStyles = StyleSheet.create({
     textDecoration: "none",
     fontSize: 10,
     marginRight: 8,
-    color: "black",
+    color: "#0D447F",
     marginBottom: 2,
   },
 });

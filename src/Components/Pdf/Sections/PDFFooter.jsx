@@ -7,26 +7,26 @@ const styles = StyleSheet.create({
   footer: {
     ...commonStyles.section,
     borderTop: "1px solid black",
-    paddingTop: 4,
-    marginBottom: 1,
     width: "100%",
   },
   flexContainer: {
     flexDirection: "row",
     justifyContent: "center",
-    marginBottom: 2,
+    marginTop: 6,
+    // marginBottom: 2,
   },
   description: {
     ...commonStyles.description,
-    fontSize: 8,
+    // fontSize: 8,
     marginLeft: 0,
     marginBottom: 0,
   },
   link: {
     ...commonStyles.link,
-    fontSize: 8,
     marginRight: 4,
     textDecoration: "underline",
+    marginLeft: 0,
+    marginBottom: 0,
   },
 });
 
@@ -34,15 +34,17 @@ const PDFFooter = () => {
   return (
     <View style={styles.footer}>
       <View style={styles.flexContainer}>
-        <Text style={styles.description}>Review my projects here: </Text>
-        {projectsData.map((project, index) => (
-          <Link style={styles.link} key={index} href={project.webpageUrl}>
-            {project.webpageUrl}
-          </Link>
-        ))}
+        <Text style={styles.description}>Smart Investor: </Text>
+        <Link style={styles.link} href={projectsData[0].webpageUrl}>
+          {projectsData[0].webpageUrl}
+        </Link>
+        <Text style={styles.description}>Career Webpage: </Text>
+        <Link style={styles.link} href={projectsData[2].webpageUrl}>
+          {projectsData[2].webpageUrl}
+        </Link>
       </View>
       <View style={styles.flexContainer}>
-        <Text style={styles.description}>Or in my GitHub: </Text>
+        <Text style={styles.description}>GitHub: </Text>
         <Link style={styles.link} href={headerData.gitHub.href}>
           {headerData.gitHub.href}
         </Link>

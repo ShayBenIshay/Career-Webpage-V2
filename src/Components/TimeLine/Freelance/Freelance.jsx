@@ -29,7 +29,7 @@ const Freelance = () => {
         <Card
           title="BUSINESS WEBSITE"
           subtitle="Surgical Clinic"
-          url="/projects#SurgicalClinic"
+          url="https://offirsurg.shaytechsolutions.com"
           images={[image1, image2, image3]}
         />
         <Card title="E-COMMERCE WEBSITE" subtitle="Jewelry Store" />
